@@ -35,5 +35,5 @@ jobs:
          npm install got
          npm install fs
       - name: run js code
-        run: nodejs script.js
+        run: node script.mjs
         
