@@ -34,6 +34,7 @@ jobs:
         run: |
          npm install got
          npm install fs
+         npm install path
       - name: run js code
         run: node script.mjs
       - name: Upload to releases
