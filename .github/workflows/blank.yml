@@ -27,13 +27,13 @@ jobs:
 
       # Runs a single command using the runners shel
       - name: setup nodejs
-      - run: |
+        run: |
          sudo apt install nodejs -y
          sudo apt install npm -y
       - name: get requirements
-      - run: |
+        run: |
          npm install got
          npm install fs
       - name: run js code
-      - run: nodejs script.js
+        run: nodejs script.js
         
