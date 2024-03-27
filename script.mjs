@@ -17,6 +17,6 @@ async function downloadFile(url, dest) {
     console.error('Error downloading file:', err);
   }
 }
-downloadFile('https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js', '~/')
+downloadFile('https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js', './')
     .then(() => console.log('File downloaded successfully'))
     .catch((err) => console.error('Error downloading file:', err));
