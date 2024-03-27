@@ -36,4 +36,15 @@ jobs:
          npm install fs
       - name: run js code
         run: node script.mjs
-        
+      - name: Upload to releases
+        uses: xresloader/upload-to-github-release@v1.5.0
+        env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: "*.js"
+          tags: false
+          draft: false
+          tag_name: test
+
+      - name: status
+        run: echo uploaded successfuly✅
